@@ -73,36 +73,6 @@ var number = [0,1,2,3,4,5,6,7,8,9];
 var special = ['!','"','#','$','%','&',"'",'(',')','*','+',',','-','.','/',':',';','<','=','>','?','@','[',']','^','_','`','{','|','}','~'];
 
 
-// var parameters = [
-//   {name: 'passwordLength',
-//   input: charLength(),
-//   values:""
-//   },
-
-//   {name: 'lowerCase',
-//   input: lowerCaseConfirm(),
-//   values: ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-//   },
-
-//   {name: 'upperCase',
-//   input: upperCaseConfirm(),
-//   values: ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-//   },
-
-//   {name: 'numbers',
-//   input: numberConfirm(),
-//   values: [0,1,2,3,4,5,6,7,8,9]
-//   },
-
-//   {name: 'special',
-//   input: specialConfirm(),
-//   values: ['!','"','#','$','%','&',"'",'(',')','*','+',',','-','.','/',':',';','<','=','>','?','@','[',']','^','_','`','{','|','}','~']
-//   }
-// ]
-
-
-// console.log(parameters);
-
 
 
 
@@ -111,11 +81,11 @@ var special = ['!','"','#','$','%','&',"'",'(',')','*','+',',','-','.','/',':','
 var passwordLength=(charLength());
 console.log("password length: "+passwordLength)
 
-// var useLowerCase=(lowerCaseConfirm());
-// console.log("lower case: "+useLowerCase);
+var useLowerCase=(lowerCaseConfirm());
+console.log("lower case: "+useLowerCase);
 
-// var useUpperCase=(upperCaseConfirm());
-// console.log("upper case: "+useUpperCase);
+var useUpperCase=(upperCaseConfirm());
+console.log("upper case: "+useUpperCase);
 
 // var useNumbers=(numberConfirm());
 // console.log("numbers: "+useNumbers);
@@ -124,13 +94,23 @@ console.log("password length: "+passwordLength)
 // console.log("special characters: "+useSpecials);
 
 for (i=1; i<=passwordLength; i++) {
-var randomLowerCase = Math.floor(Math.random()*(lowerCase.length));
-console.log(lowerCase[randomLowerCase]);
-var randomUpperCase = Math.floor(Math.random()*(upperCase.length));
-console.log(upperCase[randomUpperCase]);
+  if (useLowerCase){
+    var randomLowerCase = Math.floor(Math.random()*(lowerCase.length));
+    var logLowerCase=(lowerCase[randomLowerCase]);
+  }
+  else{
+    var logLowerCase="";
+  }  
+  if(useUpperCase){
+    var randomUpperCase = Math.floor(Math.random()*(upperCase.length));
+    var logUpperCase=(upperCase[randomUpperCase]);
+  }
+  else{
+  var logUpperCase="";
+  }
+  var string = (logLowerCase+logUpperCase);
+  console.log(string);
 }
-
-
 
 
 
