@@ -58,12 +58,7 @@ var specialConfirm = function(){
   }
 }//End of specialConfirm function
 
-// DEFINE PASSWORD COMPONENTS: LOWER CASE LETTERS, UPPER CASE LETTERS, NUMBERS AND SPECIAL CHARACTERS
 
-var lowerCase = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-var upperCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-var number = [0,1,2,3,4,5,6,7,8,9];
-var special = ['!','"','#','$','%','&',"'",'(',')','*','+',',','-','.','/',':',';','<','=','>','?','@','[',']','^','_','`','{','|','}','~'];
 
 // CALL ALL FUNCTIONS FOR PASSWORD LENGTH, LOWER-CASE LETTERS, UPPER-CASE LETTERS, NUMBERS AND SPECIAL CHARACTERS
 
@@ -84,13 +79,19 @@ console.log("special characters: "+useSpecials);
 
 
 
+// DEFINE PASSWORD COMPONENTS: LOWER CASE LETTERS, UPPER CASE LETTERS, NUMBERS AND SPECIAL CHARACTERS
 
+var lowerCase = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+var upperCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+var number = [0,1,2,3,4,5,6,7,8,9];
+var special = ['!','"','#','$','%','&',"'",'(',')','*','+',',','-','.','/',':',';','<','=','>','?','@','[',']','^','_','`','{','|','}','~'];
 
+// BUILD ARRAY TO STORE RANDOMLY GENERATED CHARACTERS FOR PASSWORD
 
 var myArray=[]
 
 
-for (i=1; i<=passwordLength; i++) {
+for (i=1; ; i++) {
   if (useLowerCase){
     var randomLowerCase = Math.floor(Math.random()*(lowerCase.length));
     myArray.push(lowerCase[randomLowerCase]);
