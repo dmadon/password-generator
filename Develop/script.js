@@ -67,7 +67,9 @@ var parameterValidation = function(){
   }
 }
 
+// BUILD ARRAY TO STORE RANDOMLY GENERATED CHARACTERS FOR PASSWORD
 
+var myArray=[];
 
 
 // CALL FUNCTION FOR PASSWORD LENGTH 
@@ -109,9 +111,7 @@ var upperCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P'
 var number = [0,1,2,3,4,5,6,7,8,9];
 var special = ['!','"','#','$','%','&',"'",'(',')','*','+',',','-','.','/',':',';','<','=','>','?','@','[',']','^','_','`','{','|','}','~'];
 
-// BUILD ARRAY TO STORE RANDOMLY GENERATED CHARACTERS FOR PASSWORD
 
-var myArray=[]
 
 
 
@@ -150,6 +150,8 @@ for (i=1; ; i++) {
     }
   }
 }
+
+
 
 
 var shuffleValues = function(){
