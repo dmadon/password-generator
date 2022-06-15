@@ -58,12 +58,19 @@ var specialConfirm = function(){
   }
 }//End of specialConfirm function
 
-
+var parameterValidation = function(){
+  if(!useLowerCase && !useUpperCase && !useNumbers && !useSpecials){
+    return false
+  }
+  else{
+    return true
+  }
+}
 
 // CALL ALL FUNCTIONS FOR PASSWORD LENGTH, LOWER-CASE LETTERS, UPPER-CASE LETTERS, NUMBERS AND SPECIAL CHARACTERS
 
 var passwordLength=(charLength());
-console.log("password length: "+passwordLength)
+console.log("password length: "+passwordLength);
 
 var useLowerCase=(lowerCaseConfirm());
 console.log("lower case: "+useLowerCase);
@@ -77,6 +84,9 @@ console.log("numbers: "+useNumbers);
 var useSpecials=(specialConfirm());
 console.log("special characters: "+useSpecials);
 
+var acceptParameters=(parameterValidation());
+console.log("Parameters: " + acceptParameters);
+
 
 
 // DEFINE PASSWORD COMPONENTS: LOWER CASE LETTERS, UPPER CASE LETTERS, NUMBERS AND SPECIAL CHARACTERS
@@ -89,6 +99,9 @@ var special = ['!','"','#','$','%','&',"'",'(',')','*','+',',','-','.','/',':','
 // BUILD ARRAY TO STORE RANDOMLY GENERATED CHARACTERS FOR PASSWORD
 
 var myArray=[]
+
+
+
 
 
 for (i=1; ; i++) {
