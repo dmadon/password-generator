@@ -120,7 +120,7 @@ var writePassword = function(){
   var number = [0,1,2,3,4,5,6,7,8,9];
   var special = ['!','"','#','$','%','&',"'",'(',')','*','+',',','-','.','/',':',';','<','=','>','?','@','[',']','^','_','`','{','|','}','~'];
 
-  // FOR LOOP TO SELECT RANDOM VALUES FROM PARAMETER ARRAYS SPECIFIED BY USER
+  // FOR LOOP TO SELECT RANDOM VALUES FROM PARAMETER ARRAYS SPECIFIED BY USER AND PUSH THEM INTO myArray
 
   for (i=1; ; i++) {
     if (useLowerCase){
