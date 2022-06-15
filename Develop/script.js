@@ -67,11 +67,17 @@ var parameterValidation = function(){
   }
 }
 
-// CALL ALL FUNCTIONS FOR PASSWORD LENGTH, LOWER-CASE LETTERS, UPPER-CASE LETTERS, NUMBERS AND SPECIAL CHARACTERS
+
+
+
+// CALL FUNCTION FOR PASSWORD LENGTH 
 
 var passwordLength=(charLength());
 console.log("password length: "+passwordLength);
 
+// CALL FUNCTIONS FOR UPPER CASE, LOWER CASE, NUMBERS, AND SPECIAL CHARACTERS AND VALIDATE THAT AT LEAST ONE CHARACTER TYPE HAS BEEN SELECTED
+
+do{
 var useLowerCase=(lowerCaseConfirm());
 console.log("lower case: "+useLowerCase);
 
@@ -87,12 +93,11 @@ console.log("special characters: "+useSpecials);
 var acceptParameters=(parameterValidation());
 console.log("Parameters: " + acceptParameters);
 
+if(!parameterValidation()){
+  alert("Please select at least one character type");
+}
+}
 while(!acceptParameters){
-  alert("Please choose at least one character type");
-  lowerCaseConfirm();
-  upperCaseConfirm();
-  numberConfirm();
-  specialConfirm();
 }
 
 
