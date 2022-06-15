@@ -154,14 +154,13 @@ for (i=1; ; i++) {
 
 
 
-var shuffleValues = function(){
+var generatePassword = function(){
   myArray.sort(()=>Math.random()-0.5);
   return (myArray.join(''));
 }
 
-var myPassword=shuffleValues();
-
-console.log("myPassword: "+myPassword);
+var password=generatePassword();
+console.log("myPassword: "+password);
 
 
 
