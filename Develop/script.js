@@ -58,6 +58,8 @@ var specialConfirm = function(){
   }
 }//End of specialConfirm function
 
+// VALIDATE THAT AT LEAST ONE PARAMETER HAS BEEN SELECTED AND RETURN "FALSE" IF ALL PARAMETERS HAVE BEEN LEFT BLANK
+
 var parameterValidation = function(){
   if(!useLowerCase && !useUpperCase && !useNumbers && !useSpecials){
     return false
@@ -65,12 +67,11 @@ var parameterValidation = function(){
   else{
     return true
   }
-}
+}//end of parameterValidation function
 
 // BUILD ARRAY TO STORE RANDOMLY GENERATED CHARACTERS FOR PASSWORD
 
 var myArray=[];
-
 
 // CALL FUNCTION FOR PASSWORD LENGTH 
 
@@ -101,8 +102,7 @@ if(!parameterValidation()){
 }
 while(!acceptParameters){
 }
-
-
+//end of do/while loop
 
 // DEFINE PASSWORD COMPONENTS: LOWER CASE LETTERS, UPPER CASE LETTERS, NUMBERS AND SPECIAL CHARACTERS
 
@@ -111,11 +111,7 @@ var upperCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P'
 var number = [0,1,2,3,4,5,6,7,8,9];
 var special = ['!','"','#','$','%','&',"'",'(',')','*','+',',','-','.','/',':',';','<','=','>','?','@','[',']','^','_','`','{','|','}','~'];
 
-
-
-
-
-
+// FOR LOOP TO SELECT RANDOM VALUES FROM PARAMETER ARRAYS SPECIFIED BY USER
 
 for (i=1; ; i++) {
   if (useLowerCase){
@@ -149,7 +145,7 @@ for (i=1; ; i++) {
       break;
     }
   }
-}
+}//end for loop
 
 
 
