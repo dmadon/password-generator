@@ -87,6 +87,14 @@ console.log("special characters: "+useSpecials);
 var acceptParameters=(parameterValidation());
 console.log("Parameters: " + acceptParameters);
 
+while(!acceptParameters){
+  alert("Please choose at least one character type");
+  lowerCaseConfirm();
+  upperCaseConfirm();
+  numberConfirm();
+  specialConfirm();
+}
+
 
 
 // DEFINE PASSWORD COMPONENTS: LOWER CASE LETTERS, UPPER CASE LETTERS, NUMBERS AND SPECIAL CHARACTERS
