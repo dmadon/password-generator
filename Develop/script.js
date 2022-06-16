@@ -156,7 +156,7 @@ var writePassword = function(){
     }
   }//end for loop
 
-// SHUFFLE THE RANDOMLY GENERATED CHARACTERS IN myArray, AND JOIN THEM TOGETHER AS A STRING WITH NO SEPARATORS
+// SHUFFLE THE RANDOMLY GENERATED CHARACTERS IN myArray, AND JOIN THEM TOGETHER WITH NO SEPARATORS IN BETWEEN
 
   var generatePassword = function(){
     myArray.sort(()=>Math.random()-0.5);
