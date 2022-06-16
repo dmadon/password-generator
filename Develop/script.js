@@ -85,25 +85,25 @@ var writePassword = function(){
   // CALL FUNCTION FOR PASSWORD LENGTH 
 
   var passwordLength=(charLength());
-  console.log("password length: "+passwordLength);
+  // console.log("password length: "+passwordLength);
 
   // CALL FUNCTIONS FOR UPPER CASE, LOWER CASE, NUMBERS, AND SPECIAL CHARACTERS AND VALIDATE THAT AT LEAST ONE CHARACTER TYPE HAS BEEN SELECTED
 
   do{
   var useLowerCase=(lowerCaseConfirm());
-  console.log("lower case: "+useLowerCase);
+  // console.log("lower case: "+useLowerCase);
 
   var useUpperCase=(upperCaseConfirm());
-  console.log("upper case: "+useUpperCase);
+  // console.log("upper case: "+useUpperCase);
 
   var useNumbers=(numberConfirm());
-  console.log("numbers: "+useNumbers);
+  // console.log("numbers: "+useNumbers);
 
   var useSpecials=(specialConfirm());
-  console.log("special characters: "+useSpecials);
+  // console.log("special characters: "+useSpecials);
 
   var acceptParameters=(parameterValidation());
-  console.log("Parameters: " + acceptParameters);
+  // console.log("Parameters: " + acceptParameters);
 
   if(!parameterValidation()){
     alert("Please select at least one character type");
@@ -166,7 +166,7 @@ var writePassword = function(){
   // WRITE PASSWORD TO THE  #password input
 
   var password = generatePassword();
-  console.log("myPassword: "+password);
+  // console.log("myPassword: "+password);
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
