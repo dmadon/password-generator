@@ -24,6 +24,11 @@ When all criteria have been validated, a random password is generated
 * I incorporated what I had learned about loops, functions, properties and methods into the validation of criteria and generation of randomly-selected characters
 * I did use the internet to fill in some gaps where I ran into problems with my code
 
+## Preview
+
+![image](https://user-images.githubusercontent.com/99852346/187563486-460c4ce3-c0c0-42e9-9134-70684366d8bb.png)
+
+
 ## Links
 
 View the deployed application: https://dmadon.github.io/password-generator/
