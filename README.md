@@ -30,6 +30,8 @@ When all criteria have been validated, a random password is generated
 
 ![image](https://user-images.githubusercontent.com/99852346/187563534-1ab6d196-0d1a-4c6b-a38f-1b3abb130d3e.png)
 
+![image](https://user-images.githubusercontent.com/99852346/187563569-2cabb42c-7e20-4f7d-b8ce-9de64213830a.png)
+
 
 
 ## Links
